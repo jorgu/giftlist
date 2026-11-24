@@ -110,14 +110,14 @@ const önskelista = [
   {
     typ: 'Födelsedag',
     mottagare: 'Kristoffer',
-    paket: 'Arsenaltröja Gyökeres shorts',
+    paket: 'Arsenal-Gyökeres shorts',
     länktext: '',
     länk: ''
   },
   {
     typ: 'Födelsedag',
     mottagare: 'Kristoffer',
-    paket: 'Arsenaltröja Gyökeres hårgele',
+    paket: 'Arsenal-Gyökeres hårgele',
     länktext: '',
     länk: ''
   }
