@@ -101,21 +101,21 @@ const önskelista = [
     länk: ''
   },
   {
-    typ: 'Födelsedag',
+    typ: 'Julklapp',
     mottagare: 'Kristoffer',
     paket: 'Arsenaltröja Gyökeres',
     länktext: 'Ö & B',
     länk: ''
   },
   {
-    typ: 'Födelsedag',
+    typ: 'Julklapp',
     mottagare: 'Kristoffer',
     paket: 'Arsenal-Gyökeres shorts',
     länktext: '',
     länk: ''
   },
   {
-    typ: 'Födelsedag',
+    typ: 'Julklapp',
     mottagare: 'Kristoffer',
     paket: 'Arsenal-Gyökeres hårgele',
     länktext: '',
