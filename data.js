@@ -1,124 +1,21 @@
-// Lägg till, ändra eller ta bort presenter i listan här.
-// länk ska vara en fullständig URL. Om ingen URL finns visas länktexten som vanlig text.
-
+// Lägg bildfiler i undermappen "underlag".
+// Om länktext är ett bildfilnamn skapas automatiskt en länk till underlag/filnamn.
 const önskelista = [
-  {
-    typ: 'Julklapp',
-    mottagare: 'Theo',
-    paket: 'Polislastbil med platt flak (i stil med)',
-    länktext: 'Leksaksaffären.com',
-    länk: 'https://leksaksaffaren.com/oevrigt/56576-majorette-volvo-lastbil-med-airbus-polishelikopter-3467452079003.html?gad_source=1&gad_campaignid=17180980300'
-  },
-  {
-    typ: 'Julklapp',
-    mottagare: 'Theo',
-    paket: 'Polisbil (i stil med)',
-    länktext: 'Leksaksaffären.com',
-    länk: 'https://leksaksaffaren.com/raeddningstjaenst/52311-majorette-svensk-polisbil-volvo-v90-3467452077832.html'
-  },
-  {
-    typ: 'Julklapp',
-    mottagare: 'Theo',
-    paket: 'Monstertruckbrandbil',
-    länktext: 'leksaksbilar.se',
-    länk: 'https://leksaksbilar.se/sv/products/hw-5-alarm-monster-trucks-big-rigs-hot-wheels/?utm_source=adtraction&utm_medium=affiliate&utm_campaign=adtraction&at_gd=F0599AEB4A3875AA78DC3117485FC2C7DA885C99&trackID=203437377'
-  },
-  {
-    typ: 'Julklapp',
-    mottagare: 'Theo',
-    paket: 'Hot wheels garage',
-    länktext: 'amazon.se',
-    länk: 'https://www.amazon.se/Hot-Wheels-Ultimate-lekm%C3%B6jligheter-v%C3%A5ningar/dp/B07Y94W69D/ref=asc_df_B07Y94W69D?mcid=e4de893f9ad230169fad01cf6cf7d872&tag=shpngadsglesm-21&linkCode=df0&hvadid=719657099437&hvpos=&hvnetw=g&hvrand=9038518461455647997&hvpone=&hvptwo=&hvqmt=&hvdev=m&hvdvcmdl=&hvlocint=&hvlocphy=1012563&hvtargid=pla-945224594343&psc=1&language=sv_SE&gad_source=1'
-  },
-  {
-    typ: 'Julklapp',
-    mottagare: 'Theo/Alfred',
-    paket: 'UFO-boll',
-    länktext: 'fyndiq.se',
-    länk: 'https://fyndiq.se/produkt/flygande-tefat-leksaksboll-magisk-deformations-ufo-leksak-for-barn-och-husdjur-utomhusleksak-flygande-boll-bla-3-lampor-7733197fdc3b409b/?gad_source=1&gad_campaignid=22068346990'
-  },
-  {
-    typ: 'Julklapp',
-    mottagare: 'Theo/Alfred',
-    paket: 'Hot wheelsgarage',
-    länktext: 'prisjakt.nu',
-    länk: 'https://www.prisjakt.nu/produkt.php?p=12819754'
-  },
-  {
-    typ: 'Julklapp',
-    mottagare: 'Alfred',
-    paket: 'Pengar till säng',
-    länktext: '',
-    länk: ''
-  },
-  {
-    typ: 'Julklapp',
-    mottagare: 'Alfred',
-    paket: 'Pengar till möbler',
-    länktext: '',
-    länk: ''
-  },
-  {
-    typ: 'Julklapp',
-    mottagare: 'Emma',
-    paket: 'Ullmax cool ankle vit x8, stl 35-38',
-    länktext: 'shop.ullmax.se',
-    länk: 'https://shop.ullmax.com/se/produkt/coolmax-sock-ankle-4-p-white/'
-  },
-  {
-    typ: 'Julklapp',
-    mottagare: 'Emma',
-    paket: 'Ullmax cool ankle svarta x4, stl 35-38',
-    länktext: 'shop.ullmax.se',
-    länk: 'https://shop.ullmax.com/se/produkt/coolmax-sock-ankle-4-p-black/'
-  },
-  {
-    typ: 'Julklapp',
-    mottagare: 'Kristoffer/Emma',
-    paket: 'TP-link Deco X50 AX3000 Trådlöst Wifi 6-mesh 3-pack',
-    länktext: '',
-    länk: ''
-  },
-  {
-    typ: 'Julklapp',
-    mottagare: 'Kristoffer/Emma',
-    paket: 'Cat 6 nätverkskabel, 2m',
-    länktext: 'kjell.com',
-    länk: 'https://www.kjell.com/se/produkter/natverk/natverkskablar/natverkskablar-i-fardiga-langder/luxorparts-utp-natverkskabel-cat.-6-vit-20-m-p68080'
-  },
-  {
-    typ: 'Julklapp',
-    mottagare: 'Daniel',
-    paket: 'Golfbag DRY PERFORM WATERPRO CART green/black',
-    länktext: 'out-of-bounds.se',
-    länk: 'https://www.out-of-bounds.se/golfutrustning/golfbag-dry-performance-waterproof-cartbag'
-  },
-  {
-    typ: 'Julklapp',
-    mottagare: 'Daniel',
-    paket: 'Knivställ magnet stående',
-    länktext: '',
-    länk: ''
-  },
-  {
-    typ: 'Julklapp',
-    mottagare: 'Kristoffer',
-    paket: 'Arsenaltröja Gyökeres',
-    länktext: 'Ö & B',
-    länk: ''
-  },
-  {
-    typ: 'Julklapp',
-    mottagare: 'Kristoffer',
-    paket: 'Arsenal-Gyökeres shorts',
-    länktext: '',
-    länk: ''
-  },
-  {
-    typ: 'Julklapp',
-    mottagare: 'Kristoffer',
-    paket: 'Arsenal-Gyökeres hårgele',
-    länktext: '',
-    länk: ''
-  }
+{typ: 'Födelsedag', mottagare: 'Jörgen', paket: 'OXC Sadelväska Aqua Evo Adventure 10L, svart', länktext: 'Racerdepån. nätet', länk:' '},
+{typ: 'Födelsedag', mottagare: 'Jörgen', paket: ' Armband Garmin forerunner 55 vit silikon 20mm (Art#:010-11251-1P)', länktext: 'garmin.com', länk:'https://www.garmin.com/sv-SE/p/552881/'},
+{typ: 'Födelsedag', mottagare: 'Mamma/Pappa', paket: 'Hahn Pisa kryddställ för 18 burkar', länktext: 'Bagaren & Kocken', länk:'https://www.bagarenochkocken.se/p/hahn-pisa-kryddstaell-krom-foer-18-burkar_19692/'},
+{typ: 'Födelsedag', mottagare: 'Emma', paket: 'tofflor bruna, storlek 38 ', länktext: 'Ellos.tofflor', länk:'https://www.ellos.se/shepherd/farskinnstoffel-jessica/1565922-08'},
+{typ: 'Födelsedag', mottagare: 'Emma', paket: 'Filt beige', länktext: 'Ellos.filt', länk:'https://www.ellos.se/km-home/plad-soho/2366551-01'},
+{typ: 'Födelsedag', mottagare: 'Kristoffer/Emma', paket: 'Global knivset (G-95, GS-38, GS-109)', länktext: 'Global knivset', länk:'https://www.cervera.se/produkt/global-global-classic-knivset-3-delar-g-96-gs-38-gs-109?gad_source=1&gad_campaignid=23620082587&gbraid=0AAAAADuT8xpadgypf1yfq7NYH-q0n61LU&gclid=CjwKCAiAn4XYBhA-EiwA8176FR5ciOpZbdr5Edcq3oHJyufGK6T4UNg5hBy8gWGi2Vsew46TUmAx8RoCV_oQAvD_BwE'},
+{typ: 'Födelsedag', mottagare: 'Theo', paket: 'Lego (vi tänkte kika ut förslag)', länktext: '', länk:' '},
+{typ: 'Födelsedag', mottagare: 'Theo', paket: 'Skrivbord (håller på att kikar)', länktext: '', länk:' '},
+{typ: 'Födelsedag', mottagare: 'Theo', paket: 'Kläder (vi köper som ni kan ge)', länktext: '', länk:' '},
+{typ: 'Födelsedag', mottagare: 'Theo', paket: 'Monster jam Marvel 5-pack (Lekia, bild)', länktext: '', länk:' '},
+{typ: 'Födelsedag', mottagare: 'Theo', paket: 'Acrylic marker set (specifik, bild)', länktext: '', länk:' '},
+{typ: 'Födelsedag', mottagare: 'Theo', paket: 'Discolampa (Lekia)', länktext: '', länk:' '},
+{typ: 'Födelsedag', mottagare: 'Theo', paket: 'Gosedjur Mufasa/Simba, fullvuxet lejon, c:a 20-30cm (exempel Boozt)', länktext: '', länk:' '},
+{typ: 'Födelsedag', mottagare: 'Alfred', paket: 'Pikachu gosedjur c:a 20-30cm', länktext: '', länk:' '},
+{typ: 'Födelsedag', mottagare: 'Alfred', paket: 'Eevee gosedjur 20cm (Booztlet, bild)', länktext: '', länk:' '},
+{typ: 'Födelsedag', mottagare: 'Alfred', paket: 'Kläder (vi köper som ni kan ge)', länktext: '', länk:' '},
+{typ: 'Födelsedag', mottagare: 'Theo/Alfred', paket: 'Böcker (vi tänkte föreslå när vi kikat igenom vad vi har)', länktext: '', länk:' '}
 ];

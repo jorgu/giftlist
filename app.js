@@ -1,97 +1,85 @@
 const listContainer = document.querySelector('#lists');
 const searchInput = document.querySelector('#search');
+const searchToolbar = document.querySelector('#search-toolbar');
 const emptyState = document.querySelector('#empty-state');
-const filterButtons = [...document.querySelectorAll('.filter-button')];
 
-let activeFilter = 'Alla';
+const currentYear = new Date().getFullYear();
+document.querySelector('#year-heading').textContent = currentYear;
+document.querySelector('#footer-year').textContent = currentYear;
+document.title = `Presentlista ${currentYear}`;
 
-function createCell(className, text) {
-  const cell = document.createElement('div');
-  cell.className = className;
-  cell.textContent = text || '';
-  return cell;
+const imageExtensions = /\.(jpe?g|png|gif|webp|avif|bmp|svg|tiff?)$/i;
+
+function getLink(item) {
+  const label = (item.länktext || '').trim();
+  if (imageExtensions.test(label)) {
+    return { href: `underlag/${encodeURIComponent(label)}`, text: label.replace(imageExtensions, '') };
+  }
+  if (item.länk && /^https?:\/\//i.test(item.länk.trim())) {
+    return { href: item.länk.trim(), text: label || 'Öppna länk' };
+  }
+  return { href: '', text: label || (item.länk || '').trim() };
 }
 
-function createStoreCell(item) {
-  const cell = document.createElement('div');
-  cell.className = 'store-cell';
+function cell(className, text) {
+  const el = document.createElement('div');
+  el.className = className;
+  el.textContent = text || '';
+  return el;
+}
 
-  if (item.länk && /^https?:\/\//i.test(item.länk)) {
-    const link = document.createElement('a');
-    link.href = item.länk;
-    link.textContent = item.länktext || 'Öppna länk';
-    link.target = '_blank';
-    link.rel = 'noopener noreferrer';
-    cell.append(link);
-  } else if (item.länktext || item.länk) {
-    cell.textContent = item.länktext || item.länk;
+function storeCell(item) {
+  const el = document.createElement('div');
+  el.className = 'store-cell';
+  const info = getLink(item);
+  if (!info.href) {
+    el.textContent = info.text;
+    return el;
   }
-
-  return cell;
+  const a = document.createElement('a');
+  a.href = info.href;
+  a.textContent = info.text;
+  if (/^https?:\/\//i.test(info.href)) {
+    a.target = '_blank';
+    a.rel = 'noopener noreferrer';
+  }
+  el.append(a);
+  return el;
 }
 
 function render() {
   const query = searchInput.value.trim().toLocaleLowerCase('sv');
   const filtered = önskelista.filter(item => {
-    const matchesType = activeFilter === 'Alla' || item.typ === activeFilter;
-    const searchable = [item.mottagare, item.paket, item.länktext, item.länk]
-      .join(' ')
-      .toLocaleLowerCase('sv');
-    return matchesType && searchable.includes(query);
+    const info = getLink(item);
+    return [item.mottagare, item.paket, info.text, item.länk]
+      .join(' ').toLocaleLowerCase('sv').includes(query);
   });
 
   listContainer.replaceChildren();
-
-  const sections = [
-    { type: 'Julklapp', title: 'Julklappslista', className: 'christmas' },
-    { type: 'Födelsedag', title: 'Födelsedagslista', className: 'birthday' }
-  ];
-
-  sections.forEach(section => {
+  [
+    { type:'Julklapp', title:'Julklappslista', cls:'christmas' },
+    { type:'Födelsedag', title:'Födelsedagslista', cls:'birthday' }
+  ].forEach(section => {
     const items = filtered.filter(item => item.typ === section.type);
     if (!items.length) return;
-
-    const sectionElement = document.createElement('section');
-    sectionElement.className = `list-section ${section.className}`;
-
+    const block = document.createElement('section');
+    block.className = `list-section ${section.cls}`;
     const heading = document.createElement('div');
     heading.className = 'table-heading';
-    heading.append(
-      createCell('recipient', 'Mottagare'),
-      createCell('gift', section.title),
-      createCell('store-heading', 'Butik/Länk')
-    );
-    sectionElement.append(heading);
-
+    heading.append(cell('recipient','Mottagare'), cell('gift',section.title), cell('store-heading','Butik/Länk'));
+    block.append(heading);
     items.forEach(item => {
       const row = document.createElement('div');
       row.className = 'gift-row';
-      row.append(
-        createCell('recipient', item.mottagare),
-        createCell('gift', item.paket),
-        createStoreCell(item)
-      );
-      sectionElement.append(row);
+      row.append(cell('recipient',item.mottagare), cell('gift',item.paket), storeCell(item));
+      block.append(row);
     });
-
-    listContainer.append(sectionElement);
+    listContainer.append(block);
   });
-
   emptyState.hidden = filtered.length > 0;
 }
 
+const recipients = new Set(önskelista.map(x => (x.mottagare || '').trim()).filter(Boolean));
+searchToolbar.hidden = recipients.size <= 1;
 searchInput.addEventListener('input', render);
-
-filterButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    activeFilter = button.dataset.filter;
-    filterButtons.forEach(candidate => {
-      const selected = candidate === button;
-      candidate.classList.toggle('active', selected);
-      candidate.setAttribute('aria-pressed', String(selected));
-    });
-    render();
-  });
-});
-
 render();
