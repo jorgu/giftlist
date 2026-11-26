@@ -17,5 +17,7 @@ const önskelista = [
 {typ: 'Julklapp', mottagare: 'Alfred', paket: 'Pikachu gosedjur c:a 20-30cm', länktext: '', länk:' '},
 {typ: 'Julklapp', mottagare: 'Alfred', paket: 'Eevee gosedjur 20cm (Booztlet, bild)', länktext: '', länk:' '},
 {typ: 'Julklapp', mottagare: 'Alfred', paket: 'Kläder (vi köper som ni kan ge)', länktext: '', länk:' '},
-{typ: 'Julklapp', mottagare: 'Theo/Alfred', paket: 'Böcker (vi tänkte föreslå när vi kikat igenom vad vi har)', länktext: '', länk:' '}
-];
+{typ: 'Julklapp', mottagare: 'Theo/Alfred', paket: 'Böcker (vi tänkte föreslå när vi kikat igenom vad vi har)', länktext: '', länk:' '},
+{typ: 'Julklapp', mottagare: 'Daniel', paket: 'Elektrisk rengöringsborste', länktext: 'Bosch univarsel brush', länk:'https://www.pricerunner.se/pl/628-3200251294/Staedutrustning-Rengoeringsmedel/Bosch-Universal-Brush-c-priser'},
+{typ: 'Julklapp', mottagare: 'Daniel', paket: 'Mjölkskummare visp bodium shiuma', länktext: '', länk:' '},
+{typ: 'Julklapp', mottagare: 'Daniel', paket: 'Rosttfria skålar (1 större och 1 mindre) som ett par, blanda sallad, marinad, bröddeg etc', länktext: '', länk:' '}
