@@ -21,3 +21,5 @@ const önskelista = [
 {typ: 'Julklapp', mottagare: 'Daniel', paket: 'Elektrisk rengöringsborste', länktext: 'Bosch univarsel brush', länk:'https://www.pricerunner.se/pl/628-3200251294/Staedutrustning-Rengoeringsmedel/Bosch-Universal-Brush-c-priser'},
 {typ: 'Julklapp', mottagare: 'Daniel', paket: 'Mjölkskummare visp bodium shiuma', länktext: '', länk:' '},
 {typ: 'Julklapp', mottagare: 'Daniel', paket: 'Rosttfria skålar (1 större och 1 mindre) som ett par, blanda sallad, marinad, bröddeg etc', länktext: '', länk:' '}
+
+]
