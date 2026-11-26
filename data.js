@@ -20,6 +20,15 @@ const önskelista = [
 {typ: 'Julklapp', mottagare: 'Theo/Alfred', paket: 'Böcker (vi tänkte föreslå när vi kikat igenom vad vi har)', länktext: '', länk:' '},
 {typ: 'Julklapp', mottagare: 'Daniel', paket: 'Elektrisk rengöringsborste', länktext: 'Bosch univarsel brush', länk:'https://www.pricerunner.se/pl/628-3200251294/Staedutrustning-Rengoeringsmedel/Bosch-Universal-Brush-c-priser'},
 {typ: 'Julklapp', mottagare: 'Daniel', paket: 'Mjölkskummare visp bodium shiuma', länktext: '', länk:' '},
-{typ: 'Julklapp', mottagare: 'Daniel', paket: 'Rosttfria skålar (1 större och 1 mindre) som ett par, blanda sallad, marinad, bröddeg etc', länktext: '', länk:' '}
+{typ: 'Julklapp', mottagare: 'Daniel', paket: 'Rosttfria skålar (1 större och 1 mindre) som ett par, blanda sallad, marinad, bröddeg etc', länktext: '', länk:' '},
+{typ: 'Julklapp', mottagare: 'Kristoffer', paket: 'Marker plus tips 9-pack', länktext: 'remarkable.com', länk:'https://remarkable.com/products/remarkable-2/marker-tips?selected=RM410'},
+{typ: 'Julklapp', mottagare: 'Kristoffer', paket: 'Presentkort Dressman', länktext: '', länk:' '},
+{typ: 'Julklapp', mottagare: 'Kristoffer', paket: 'Arsenaltröja årets hemmaställ L (Gabriel)', länktext: '', länk:' '},
+{typ: 'Julklapp', mottagare: 'Kristoffer', paket: 'Aktiespararna medlemskap (795:-)', länktext: '', länk:' '},
+{typ: 'Julklapp', mottagare: 'Kristoffer', paket: 'Fleecetröja L (färgprio Navy => Gray => Opal green)', länktext: 'intersport.se', länk:'https://www.intersport.se/products/helly-hansen-daybreaker-m-fleecejacka-herr/navy-162718302'},
+{typ: 'Julklapp', mottagare: 'Kristoffer', paket: 'Piké L x2 (Navy och Washed navy)', länktext: 'intersport.se/pike', länk:'https://www.intersport.se/products/helly-hansen-hudson-m-piketroja-herr/597-navy-161605104'},
+{typ: 'Julklapp', mottagare: 'Kristoffer', paket: 'Star Wars Zero company (Xbox Series X)', länktext: '', länk:' '},
+{typ: 'Julklapp', mottagare: 'Kristoffer', paket: 'Control Resonant (Xbox Series X)', länktext: '', länk:' '},
+{typ: 'Julklapp', mottagare: 'Kristoffer', paket: 'Onimusha: Way of the Sword (Xbox Series X)', länktext: '', länk:' '}
 
 ]
