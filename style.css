@@ -33,3 +33,10 @@ footer { margin-top:34px; color:#888; font-size:.8rem; text-align:center; }
   .store-cell { grid-column:2; margin-top:2px; font-size:.86rem; opacity:.9; }
   .gift-row { row-gap:1px; }
 }
+
+.timestamp {
+  margin: 5px 0 0;
+  color: #999;
+  font-size: 0.75rem;
+  font-style: italic;
+}

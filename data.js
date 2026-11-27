@@ -1,6 +1,6 @@
 // Lägg bildfiler i undermappen "underlag".
 // Om länktext är ett bildfilnamn skapas automatiskt en länk till underlag/filnamn.
-'uppdaterad: 27-nov 07:22'
+const timestamp = 'uppdaterad: 27-nov 07:22';
 const önskelista = [
 {typ: 'Julklapp', mottagare: 'Alfred', paket: 'Pikachu gosedjur c:a 20-30cm', länktext: '', länk:' '},
 {typ: 'Julklapp', mottagare: 'Alfred', paket: 'Eevee gosedjur 20cm (Booztlet, bild)', länktext: '', länk:' '},

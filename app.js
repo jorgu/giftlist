@@ -10,6 +10,13 @@ document.title = `Presentlista ${currentYear}`;
 
 const imageExtensions = /\.(jpe?g|png|gif|webp|avif|bmp|svg|tiff?)$/i;
 
+// Läs in och visa senast uppdaterad från data.js
+const timestampElement = document.querySelector('#timestamp');
+
+if (timestampElement && typeof timestamp !== 'undefined') {
+  timestampElement.textContent = timestamp;
+}
+
 function getLink(item) {
   const label = (item.länktext || '').trim();
   if (imageExtensions.test(label)) {
