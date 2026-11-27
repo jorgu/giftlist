@@ -1,6 +1,4 @@
-// Lägg bildfiler i undermappen "underlag".
-// Om länktext är ett bildfilnamn skapas automatiskt en länk till underlag/filnamn.
-const timestamp = 'uppdaterad: 27-nov 07:22';
+const timestamp = 'uppdaterad: 27-nov 22:16'
 const önskelista = [
 {typ: 'Julklapp', mottagare: 'Alfred', paket: 'Pikachu gosedjur c:a 20-30cm', länktext: '', länk:' '},
 {typ: 'Julklapp', mottagare: 'Alfred', paket: 'Eevee gosedjur 20cm (Booztlet, bild)', länktext: '', länk:' '},
@@ -10,6 +8,7 @@ const önskelista = [
 {typ: 'Julklapp', mottagare: 'Daniel', paket: 'Rosttfria skålar (1 större och 1 mindre) som ett par, blanda sallad, marinad, bröddeg etc', länktext: '', länk:' '},
 {typ: 'Julklapp', mottagare: 'Emma', paket: 'tofflor bruna, storlek 38 ', länktext: 'Ellos.tofflor', länk:'https://www.ellos.se/shepherd/farskinnstoffel-jessica/1565922-08'},
 {typ: 'Julklapp', mottagare: 'Emma', paket: 'Filt beige', länktext: 'Ellos.filt', länk:'https://www.ellos.se/km-home/plad-soho/2366551-01'},
+{typ: 'Julklapp', mottagare: 'Emma', paket: 'Lillsport Celsius, Storlek 6, färg vita eller svarta', länktext: 'Lill-sport - skidvantar', länk:'https://www.intersport.se/products/lillsport-celsius-race-skidhandskar/white-145247102'},
 {typ: 'Julklapp', mottagare: 'Jörgen', paket: 'OXC Sadelväska Aqua Evo Adventure 10L, svart', länktext: 'Racerdepån alt nätet', länk:' '},
 {typ: 'Julklapp', mottagare: 'Jörgen', paket: ' Armband Garmin forerunner 55 vit silikon 20mm (Art#:010-11251-1P)', länktext: 'garmin.com', länk:'https://www.garmin.com/sv-SE/p/552881/'},
 {typ: 'Julklapp', mottagare: 'Kristoffer', paket: 'Marker plus tips 9-pack', länktext: 'remarkable.com', länk:'https://remarkable.com/products/remarkable-2/marker-tips?selected=RM410'},
@@ -30,5 +29,5 @@ const önskelista = [
 {typ: 'Julklapp', mottagare: 'Theo', paket: 'Acrylic marker set (specifik, bild)', länktext: '', länk:' '},
 {typ: 'Julklapp', mottagare: 'Theo', paket: 'Discolampa (Lekia)', länktext: '', länk:' '},
 {typ: 'Julklapp', mottagare: 'Theo', paket: 'Gosedjur Mufasa/Simba, fullvuxet lejon, c:a 20-30cm (exempel Boozt)', länktext: '', länk:' '},
-{typ: 'Julklapp', mottagare: 'Theo/Alfred', paket: 'Böcker (vi tänkte föreslå när vi kikat igenom vad vi har)', länktext: '', länk:' '},
+{typ: 'Julklapp', mottagare: 'Theo/Alfred', paket: 'Böcker (vi tänkte föreslå när vi kikat igenom vad vi har)', länktext: '', länk:' '}
 ]
