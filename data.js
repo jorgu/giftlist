@@ -1,5 +1,6 @@
 // Lägg bildfiler i undermappen "underlag".
 // Om länktext är ett bildfilnamn skapas automatiskt en länk till underlag/filnamn.
+'uppdaterad: 27-nov 07:22'
 const önskelista = [
 {typ: 'Julklapp', mottagare: 'Alfred', paket: 'Pikachu gosedjur c:a 20-30cm', länktext: '', länk:' '},
 {typ: 'Julklapp', mottagare: 'Alfred', paket: 'Eevee gosedjur 20cm (Booztlet, bild)', länktext: '', länk:' '},
@@ -29,6 +30,5 @@ const önskelista = [
 {typ: 'Julklapp', mottagare: 'Theo', paket: 'Acrylic marker set (specifik, bild)', länktext: '', länk:' '},
 {typ: 'Julklapp', mottagare: 'Theo', paket: 'Discolampa (Lekia)', länktext: '', länk:' '},
 {typ: 'Julklapp', mottagare: 'Theo', paket: 'Gosedjur Mufasa/Simba, fullvuxet lejon, c:a 20-30cm (exempel Boozt)', länktext: '', länk:' '},
-{typ: 'Julklapp', mottagare: 'Theo/Alfred', paket: 'Böcker (vi tänkte föreslå när vi kikat igenom vad vi har)', länktext: '', länk:' '}
-
+{typ: 'Julklapp', mottagare: 'Theo/Alfred', paket: 'Böcker (vi tänkte föreslå när vi kikat igenom vad vi har)', länktext: '', länk:' '},
 ]
