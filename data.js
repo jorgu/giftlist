@@ -9,7 +9,7 @@ const önskelista = [
 {typ: 'Julklapp', mottagare: 'Emma', paket: 'tofflor bruna, storlek 38 ', länktext: 'Ellos.tofflor', länk:'https://www.ellos.se/shepherd/farskinnstoffel-jessica/1565922-08'},
 {typ: 'Julklapp', mottagare: 'Emma', paket: 'Filt beige', länktext: 'Ellos.filt', länk:'https://www.ellos.se/km-home/plad-soho/2366551-01'},
 {typ: 'Julklapp', mottagare: 'Emma', paket: 'Lillsport Celsius, Storlek 6, färg vita eller svarta', länktext: 'Lill-sport - skidvantar', länk:'https://www.intersport.se/products/lillsport-celsius-race-skidhandskar/white-145247102'},
-{typ: 'Julklapp', mottagare: 'Jörgen', paket: 'OXC Sadelväska Aqua Evo Adventure 10L, svart', länktext: 'Racerdepån alt nätet', länk:' '},
+{typ: 'Julklapp', mottagare: 'Jörgen', paket: 'OXC Sadelväska Aqua Evo Adventure 10L, svart', länktext: 'Racerdepån alt nätet.png', länk:' '},
 {typ: 'Julklapp', mottagare: 'Jörgen', paket: ' Armband Garmin forerunner 55 vit silikon 20mm (Art#:010-11251-1P)', länktext: 'garmin.com', länk:'https://www.garmin.com/sv-SE/p/552881/'},
 {typ: 'Julklapp', mottagare: 'Kristoffer', paket: 'Marker plus tips 9-pack', länktext: 'remarkable.com', länk:'https://remarkable.com/products/remarkable-2/marker-tips?selected=RM410'},
 {typ: 'Julklapp', mottagare: 'Kristoffer', paket: 'Presentkort Dressman', länktext: '', länk:' '},
